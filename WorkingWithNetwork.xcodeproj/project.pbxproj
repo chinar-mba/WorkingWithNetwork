@@ -9,13 +9,21 @@
 /* Begin PBXBuildFile section */
 		669AFA2A2B80465F00330E5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669AFA292B80465F00330E5D /* AppDelegate.swift */; };
 		669AFA2C2B80465F00330E5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669AFA2B2B80465F00330E5D /* SceneDelegate.swift */; };
-		669AFA2E2B80465F00330E5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669AFA2D2B80465F00330E5D /* ViewController.swift */; };
-		669AFA312B80465F00330E5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 669AFA2F2B80465F00330E5D /* Main.storyboard */; };
+		669AFA2E2B80465F00330E5D /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669AFA2D2B80465F00330E5D /* AuthViewController.swift */; };
 		669AFA332B80466100330E5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 669AFA322B80466100330E5D /* Assets.xcassets */; };
 		669AFA362B80466100330E5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 669AFA342B80466100330E5D /* LaunchScreen.storyboard */; };
 		669AFA412B80466100330E5D /* WorkingWithNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669AFA402B80466100330E5D /* WorkingWithNetworkTests.swift */; };
 		669AFA4B2B80466100330E5D /* WorkingWithNetworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669AFA4A2B80466100330E5D /* WorkingWithNetworkUITests.swift */; };
 		669AFA4D2B80466100330E5D /* WorkingWithNetworkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669AFA4C2B80466100330E5D /* WorkingWithNetworkUITestsLaunchTests.swift */; };
+		669AFA5B2B80500900330E5D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669AFA5A2B80500900330E5D /* RegisterViewController.swift */; };
+		669AFA612B80587E00330E5D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669AFA602B80587E00330E5D /* NetworkService.swift */; };
+		669AFA642B805A0F00330E5D /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669AFA632B805A0F00330E5D /* Auth.swift */; };
+		669AFA662B805E0900330E5D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669AFA652B805E0900330E5D /* Constant.swift */; };
+		669AFA6A2B835CF700330E5D /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669AFA692B835CF700330E5D /* Login.swift */; };
+		669AFA6C2B83620B00330E5D /* EmailVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669AFA6B2B83620B00330E5D /* EmailVerificationViewController.swift */; };
+		669AFA6E2B836ACF00330E5D /* EmailVerification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669AFA6D2B836ACF00330E5D /* EmailVerification.swift */; };
+		66F0B6152B84965400941A34 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F0B6142B84965400941A34 /* MainViewController.swift */; };
+		66F0B6172B849CEE00941A34 /* TokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F0B6162B849CEE00941A34 /* TokenResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +47,7 @@
 		669AFA262B80465F00330E5D /* WorkingWithNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkingWithNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		669AFA292B80465F00330E5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		669AFA2B2B80465F00330E5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		669AFA2D2B80465F00330E5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		669AFA302B80465F00330E5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		669AFA2D2B80465F00330E5D /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		669AFA322B80466100330E5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		669AFA352B80466100330E5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		669AFA372B80466100330E5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +56,15 @@
 		669AFA462B80466100330E5D /* WorkingWithNetworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkingWithNetworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		669AFA4A2B80466100330E5D /* WorkingWithNetworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkingWithNetworkUITests.swift; sourceTree = "<group>"; };
 		669AFA4C2B80466100330E5D /* WorkingWithNetworkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkingWithNetworkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		669AFA5A2B80500900330E5D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		669AFA602B80587E00330E5D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		669AFA632B805A0F00330E5D /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		669AFA652B805E0900330E5D /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		669AFA692B835CF700330E5D /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		669AFA6B2B83620B00330E5D /* EmailVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailVerificationViewController.swift; sourceTree = "<group>"; };
+		669AFA6D2B836ACF00330E5D /* EmailVerification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailVerification.swift; sourceTree = "<group>"; };
+		66F0B6142B84965400941A34 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		66F0B6162B849CEE00941A34 /* TokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +115,9 @@
 		669AFA282B80465F00330E5D /* WorkingWithNetwork */ = {
 			isa = PBXGroup;
 			children = (
-				669AFA292B80465F00330E5D /* AppDelegate.swift */,
-				669AFA2B2B80465F00330E5D /* SceneDelegate.swift */,
-				669AFA2D2B80465F00330E5D /* ViewController.swift */,
-				669AFA2F2B80465F00330E5D /* Main.storyboard */,
+				669AFA5E2B80584F00330E5D /* Model */,
+				669AFA592B804F8700330E5D /* App */,
+				669AFA682B8348CB00330E5D /* WorkFlow */,
 				669AFA322B80466100330E5D /* Assets.xcassets */,
 				669AFA342B80466100330E5D /* LaunchScreen.storyboard */,
 				669AFA372B80466100330E5D /* Info.plist */,
@@ -125,6 +140,55 @@
 				669AFA4C2B80466100330E5D /* WorkingWithNetworkUITestsLaunchTests.swift */,
 			);
 			path = WorkingWithNetworkUITests;
+			sourceTree = "<group>";
+		};
+		669AFA592B804F8700330E5D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				669AFA292B80465F00330E5D /* AppDelegate.swift */,
+				669AFA2B2B80465F00330E5D /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		669AFA5E2B80584F00330E5D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				669AFA622B8059F600330E5D /* DTOs */,
+				669AFA5F2B80586100330E5D /* NetworkService */,
+				669AFA652B805E0900330E5D /* Constant.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		669AFA5F2B80586100330E5D /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				669AFA602B80587E00330E5D /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		669AFA622B8059F600330E5D /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				669AFA632B805A0F00330E5D /* Auth.swift */,
+				669AFA6D2B836ACF00330E5D /* EmailVerification.swift */,
+				669AFA692B835CF700330E5D /* Login.swift */,
+				66F0B6162B849CEE00941A34 /* TokenResponse.swift */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		669AFA682B8348CB00330E5D /* WorkFlow */ = {
+			isa = PBXGroup;
+			children = (
+				669AFA2D2B80465F00330E5D /* AuthViewController.swift */,
+				669AFA5A2B80500900330E5D /* RegisterViewController.swift */,
+				669AFA6B2B83620B00330E5D /* EmailVerificationViewController.swift */,
+				66F0B6142B84965400941A34 /* MainViewController.swift */,
+			);
+			path = WorkFlow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +297,6 @@
 			files = (
 				669AFA362B80466100330E5D /* LaunchScreen.storyboard in Resources */,
 				669AFA332B80466100330E5D /* Assets.xcassets in Resources */,
-				669AFA312B80465F00330E5D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +321,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				669AFA2E2B80465F00330E5D /* ViewController.swift in Sources */,
+				669AFA2E2B80465F00330E5D /* AuthViewController.swift in Sources */,
+				66F0B6152B84965400941A34 /* MainViewController.swift in Sources */,
 				669AFA2A2B80465F00330E5D /* AppDelegate.swift in Sources */,
+				669AFA662B805E0900330E5D /* Constant.swift in Sources */,
 				669AFA2C2B80465F00330E5D /* SceneDelegate.swift in Sources */,
+				669AFA6C2B83620B00330E5D /* EmailVerificationViewController.swift in Sources */,
+				66F0B6172B849CEE00941A34 /* TokenResponse.swift in Sources */,
+				669AFA6E2B836ACF00330E5D /* EmailVerification.swift in Sources */,
+				669AFA642B805A0F00330E5D /* Auth.swift in Sources */,
+				669AFA612B80587E00330E5D /* NetworkService.swift in Sources */,
+				669AFA5B2B80500900330E5D /* RegisterViewController.swift in Sources */,
+				669AFA6A2B835CF700330E5D /* Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +369,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		669AFA2F2B80465F00330E5D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				669AFA302B80465F00330E5D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		669AFA342B80466100330E5D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -441,7 +505,6 @@
 				INFOPLIST_FILE = WorkingWithNetwork/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -468,7 +531,6 @@
 				INFOPLIST_FILE = WorkingWithNetwork/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
